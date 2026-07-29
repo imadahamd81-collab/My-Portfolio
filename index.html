@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=5, user-scalable=yes">
+    <title>Imad Ahmad | Full-Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">
+                <svg class="logo-svg" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+                        </linearGradient>
+                        <filter id="logoShadow">
+                            <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.3"/>
+                        </filter>
+                    </defs>
+                    <rect x="4" y="4" width="40" height="40" rx="12" fill="url(#logoGradient)" filter="url(#logoShadow)"/>
+                    <text x="24" y="31" text-anchor="middle" fill="#ffffff" font-family="'Poppins', sans-serif" font-size="20" font-weight="800">IA</text>
+                </svg>
+                <span class="logo-text">Imad&nbsp;Ahmad</span>
+            </a>
+            <button class="lang-toggle" id="langToggle" title="Toggle Language">
+                <span class="lang-icon-en"><span class="flag-icon">🇺🇸</span></span>
+                <span class="lang-icon-ur"><span class="flag-icon">🇵🇰</span></span>
+                <span class="lang-label">EN</span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#hero" data-i18n="home">Home</a></li>
+                <li><a href="#about" data-i18n="about">About</a></li>
+                <li><a href="#experience" data-i18n="experience">Experience</a></li>
+                <li><a href="#projects" data-i18n="projects">Projects</a></li>
+                <li><a href="#skills" data-i18n="skills">Skills</a></li>
+                <li><a href="#contact" data-i18n="contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-bg">
+            <div class="hero-shape shape-1"></div>
+            <div class="hero-shape shape-2"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text fade-in">
+                <span class="hero-badge" data-i18n="heroBadge">Full-Stack Developer</span>
+                <h1 data-i18n="heroTitle">Hi, I'm Imad Ahmad</h1>
+                <div class="hero-typing">
+                    <span class="hero-typing-text" id="heroTypingText"></span>
+                    <span class="hero-typing-cursor">|</span>
+                </div>
+                <p class="hero-desc" data-i18n="heroText">I build scalable, user-friendly web applications that solve real-world problems. Currently seeking internships and entry-level roles to kickstart my professional career.</p>
+                <p class="hero-location"><i class="fas fa-map-marker-alt"></i> <span data-i18n="heroLocation">Swabi, Pakistan</span></p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary" data-i18n="heroBtn1">View Projects</a>
+                    <a href="#contact" class="btn btn-outline" data-i18n="heroBtn2">Contact Me</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Intro</span>
+                <h2 class="section-title fade-in">About Me</h2>
+            </div>
+            <div class="about-profile fade-in">
+                <div class="about-left">
+                    <div class="about-avatar">
+                        <img src="profile.jpg" alt="Imad Ahmad">
+                    </div>
+                    <h3 class="about-name">Imad Ahmad</h3>
+                    <p class="about-role">Full-Stack Developer</p>
+                    <p class="about-location"><i class="fas fa-map-marker-alt"></i> Swabi, Pakistan</p>
+                    <p class="about-bio">Full-Stack Developer with hands-on experience in HTML, CSS, JavaScript, SQL, MongoDB, React.js, and Node.js. Recently completed my BS Computer Science from Abdul Wali Khan University Mardan. During my academic journey, I worked on multiple projects that strengthened my skills in both frontend and backend development. I enjoy writing clean, efficient code and building scalable, user-friendly web applications. Currently seeking internships and entry-level roles to kickstart my professional career. Open to on-site, hybrid, and remote opportunities.</p>
+                    <div class="about-socials">
+                        <a href="https://www.linkedin.com/in/imad-ahmad-a41815375" class="social-link" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/imadahamd81-collab" class="social-link" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://wa.me/923143912774" class="social-link whatsapp" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=imadahamd81@gmail.com" class="social-link email" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="about-right">
+                    <div class="about-sidebar">
+                        <div class="sidebar-block">
+                            <h4>Background</h4>
+                            <p>BS Computer Science graduate focused on full-stack development and solving real-world problems through software.</p>
+                        </div>
+                        <div class="sidebar-block">
+                            <h4>Quick Info</h4>
+                            <ul>
+                                <li><span>Degree</span><span>BS Computer Science</span></li>
+                                <li><span>Location</span><span>Swabi, Pakistan</span></li>
+                                <li><span>Languages</span><span>English, Urdu</span></li>
+                                <li><span>Focus</span><span>Web & ML Development</span></li>
+                                <li><span>Status</span><span>Open to opportunities</span></li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Highlighted Work</span>
+                <h2 class="section-title fade-in">Experience</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <div>
+                                <span class="time-badge">FYP 2025</span>
+                                <h3>Virtual Assistant for Disease Detection</h3>
+                                <span class="role">Academic Project</span>
+                            </div>
+                            <div class="card-icon"><i class="fas fa-brain"></i></div>
+                        </div>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Frontend with HTML, CSS, JS for symptom collection</li>
+                            <li><i class="fas fa-check-circle"></i> Flask backend connecting ML model to web interface</li>
+                            <li><i class="fas fa-check-circle"></i> Chatbot-style flow for disease prediction</li>
+                        </ul>
+                        <div class="card-tech">
+                            <span>Python</span><span>Flask</span><span>scikit-learn</span><span>HTML</span><span>CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <div>
+                                <span class="time-badge">2026</span>
+                                <h3>Student Management System</h3>
+                                <span class="role">Personal Project</span>
+                            </div>
+                            <div class="card-icon"><i class="fas fa-database"></i></div>
+                        </div>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Built RESTful API with Node.js, Express, and MySQL2 with MVC pattern</li>
+                            <li><i class="fas fa-check-circle"></i> Secure authentication with SHA-256 hashing and parameterized queries</li>
+                            <li><i class="fas fa-check-circle"></i> Responsive dashboard for students, courses, and enrollments</li>
+                        </ul>
+                        <div class="card-tech">
+                            <span>Node.js</span><span>Express</span><span>MySQL</span><span>MVC</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <div>
+                                <span class="time-badge">2026</span>
+                                <h3>Car Rental Booking App</h3>
+                                <span class="role">Personal Project</span>
+                            </div>
+                            <div class="card-icon"><i class="fas fa-car-side"></i></div>
+                        </div>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Real-time availability checks and advanced filters</li>
+                            <li><i class="fas fa-check-circle"></i> JWT authentication and role-based access</li>
+                            <li><i class="fas fa-check-circle"></i> MySQL + MongoDB hybrid storage</li>
+                        </ul>
+                        <div class="card-tech">
+                            <span>React.js</span><span>Tailwind CSS</span><span>Node.js</span><span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <div>
+                                <span class="time-badge">2026</span>
+                                <h3>Smart Learning Hub</h3>
+                                <span class="role">Academic Project</span>
+                            </div>
+                            <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+                        </div>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Interactive learning platform with structured courses</li>
+                            <li><i class="fas fa-check-circle"></i> Timed quizzes, live search, progress tracking</li>
+                            <li><i class="fas fa-check-circle"></i> Glass-morphism UI with toast notifications</li>
+                        </ul>
+                        <div class="card-tech">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>localStorage</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="projectsTag">Works</span>
+                <h2 class="section-title fade-in" data-i18n="sectionProjects">Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Student Management System</h3>
+                    <span class="project-type">Full-Stack | 2026</span>
+                    <p>Complete academic portal with RESTful API, MySQL, SVG-dashboard, and secure SHA-256 auth.</p>
+                    <div class="project-tags">
+                        <span>Node.js</span><span>Express</span><span>MySQL</span><span>REST API</span>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-icon"><i class="fas fa-heartbeat"></i></div>
+                    <h3>Disease Detection Assistant</h3>
+                    <span class="project-type">FYP | 2025</span>
+                    <p>ML-powered symptom checker with Flask backend and interactive chatbot-style frontend.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>Flask</span><span>scikit-learn</span><span>HTML</span>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-icon"><i class="fas fa-utensils"></i></div>
+                    <h3>Ominfood</h3>
+                    <span class="project-type">Personal | 2026</span>
+                    <p>Responsive restaurant ordering platform with dynamic filtering, cart, and checkout flow.</p>
+                    <div class="project-tags">
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>localStorage</span>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-icon"><i class="fas fa-car"></i></div>
+                    <h3>Car Rental Booking App</h3>
+                    <span class="project-type">Full-Stack | 2026</span>
+                    <p>Real-time booking platform with availability checks, owner dashboard, and role-based auth.</p>
+                    <div class="project-tags">
+                        <span>React.js</span><span>Tailwind</span><span>Node.js</span><span>MongoDB</span>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-icon"><i class="fas fa-couch"></i></div>
+                    <h3>LuxeLiving E-Commerce</h3>
+                    <span class="project-type">Full-Stack | 2026</span>
+                    <p>Premium furniture store with React 19, TypeScript, Context API, and WhatsApp ordering.</p>
+                    <div class="project-tags">
+                        <span>React 19</span><span>TypeScript</span><span>Tailwind</span><span>Vite</span>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-icon"><i class="fas fa-book-open"></i></div>
+                    <h3>Smart Learning Hub</h3>
+                    <span class="project-type">Full-Stack | 2026</span>
+                    <p>Interactive learning platform with timed quizzes, live search, and progress tracking.</p>
+                    <div class="project-tags">
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>localStorage</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="educationTag">Qualification</span>
+                <h2 class="section-title fade-in" data-i18n="sectionEducation">Education</h2>
+            </div>
+            <div class="education-card fade-in">
+                <div class="edu-icon">
+                    <i class="fas fa-university"></i>
+                </div>
+                <div class="edu-content">
+                    <h3 data-i18n="educationTitle">BSc. Computer Software Engineering</h3>
+                    <p class="institution" data-i18n="educationInstitution">Abdul Wali Khan University, Mardan</p>
+                    <p class="duration" data-i18n="educationDuration">2022 – 2026 (Graduated)</p>
+                    <p data-i18n="educationText">Completed with hands-on project experience in full-stack development and strong academic foundation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="skillsTag">Tech Stack</span>
+                <h2 class="section-title fade-in" data-i18n="sectionSkills">Skills</h2>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category fade-in">
+                    <h3><i class="fas fa-language"></i> <span data-i18n="skillProg">Programming Languages</span></h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="skill-icon devicon-javascript-plain colored"></i><span class="skill-name">JavaScript</span></div>
+                        <div class="skill-item"><i class="skill-icon devicon-typescript-plain colored"></i><span class="skill-name">TypeScript</span></div>
+                        <div class="skill-item"><i class="skill-icon devicon-html5-plain colored"></i><span class="skill-name">HTML/CSS</span></div>
+                        <div class="skill-item"><i class="skill-icon devicon-nodejs-plain colored"></i><span class="skill-name">Node.js</span></div>
+                    </div>
+                </div>
+                <div class="skill-category fade-in">
+                    <h3><i class="fas fa-layer-group"></i> <span data-i18n="skillFrame">Frameworks & Libraries</span></h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="skill-icon devicon-react-original colored"></i><span class="skill-name">React.js</span></div>
+                        <div class="skill-item"><i class="skill-icon devicon-nodejs-plain colored"></i><span class="skill-name">Node.js</span></div>
+                        <div class="skill-item"><i class="skill-icon devicon-express-original colored"></i><span class="skill-name">Express</span></div>
+                        <div class="skill-item"><i class="skill-icon devicon-tailwindcss-plain colored"></i><span class="skill-name">Tailwind CSS</span></div>
+                        <div class="skill-item"><i class="skill-icon devicon-mongodb-plain colored"></i><span class="skill-name">MongoDB</span></div>
+                        <div class="skill-item"><i class="skill-icon devicon-mysql-plain colored"></i><span class="skill-name">SQL</span></div>
+                        <div class="skill-item"><i class="skill-icon devicon-firebase-plain colored"></i><span class="skill-name">Firebase</span></div>
+                    </div>
+                </div>
+                <div class="skill-category fade-in">
+                    <h3><i class="fas fa-tools"></i> <span data-i18n="skillTools">Tools & Practices</span></h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="skill-icon devicon-git-plain colored"></i><span class="skill-name">Git / GitHub</span></div>
+                        <div class="skill-item"><i class="skill-icon devicon-css3-plain colored"></i><span class="skill-name">Responsive Design</span></div>
+                        <div class="skill-item"><i class="skill-icon devicon-javascript-plain colored"></i><span class="skill-name">REST API</span></div>
+                        <div class="skill-item"><i class="skill-icon devicon-javascript-plain colored"></i><span class="skill-name">JWT Auth</span></div>
+                        <div class="skill-item"><i class="skill-icon devicon-vscode-plain colored"></i><span class="skill-name">VS Code</span></div>
+                        <div class="skill-item"><i class="skill-icon fas fa-lightbulb"></i><span class="skill-name">Problem Solving</span></div>
+                        <div class="skill-item"><i class="skill-icon fas fa-comments"></i><span class="skill-name">Communication</span></div>
+                        <div class="skill-item"><i class="skill-icon fas fa-gauge-high"></i><span class="skill-name">Web Performance Optimization</span></div>
+                    </div>
+                </div>
+                <div class="skill-category fade-in">
+                    <h3><i class="fas fa-globe"></i> <span data-i18n="skillLang">Languages Spoken</span></h3>
+                    <div class="lang-grid">
+                        <div class="lang-card">
+                            <span class="lang-name" data-i18n="skillEn">English</span>
+                            <span class="lang-level">Fluent</span>
+                        </div>
+                        <div class="lang-card">
+                            <span class="lang-name" data-i18n="skillUr">Urdu</span>
+                            <span class="lang-level">Fluent</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="contactTag">Contact</span>
+                <h2 class="section-title fade-in" data-i18n="sectionContact">Get In Touch</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info fade-in">
+                    <p data-i18n="contactText">I'm currently looking for internships and entry-level roles. If you have a question or just want to connect, feel free to reach out!</p>
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <span class="info-label">Email</span>
+                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=imadahamd81@gmail.com" data-i18n="contactEmail">imadahamd81@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fab fa-whatsapp"></i></div>
+                            <div>
+                                <span class="info-label">WhatsApp</span>
+                                <a href="https://wa.me/923143912774" target="_blank" data-i18n="contactPhone">+92 3143912774</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <span class="info-label">Location</span>
+                                <span data-i18n="contactLocation">Swabi, Pakistan</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/imad-ahmad-a41815375" class="social-link" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/imadahamd81-collab" class="social-link" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=imadahamd81@gmail.com" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://wa.me/923143912774" class="social-link whatsapp" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form fade-in">
+                    <form id="contactForm" action="https://formsubmit.co/imadahamd81@gmail.com" method="POST">
+                        <div class="form-group">
+                            <label for="name" data-i18n="formName">Your Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-i18n="formEmail">Email Address</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-i18n="formMessage">Message</label>
+                            <textarea id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" data-i18n="formSubmit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <svg class="logo-svg" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <rect x="4" y="4" width="40" height="40" rx="12" fill="url(#logoGradient2)"/>
+                    <text x="24" y="31" text-anchor="middle" fill="#ffffff" font-family="'Poppins', sans-serif" font-size="20" font-weight="800">IA</text>
+                </svg>
+                <span>Imad&nbsp;Ahmad</span>
+            </div>
+            <p class="copyright" data-i18n="footerText">&copy; 2025 Imad Ahmad. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/923143912774" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
